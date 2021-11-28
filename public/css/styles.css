@@ -1,0 +1,152 @@
+/* Global styles */
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Customize navigation-bar */
+.navbar-light {
+    transition: 500ms ease;
+    background: transparent;
+}
+
+.navbar-light.scrolled {
+    background-color: gray;
+}
+
+/* Customize the Home section backdrop */
+#home-backdrop {
+    background-color: white;
+}
+
+/* Customize the intro section */
+.my-intro {
+    top: 0px;
+    padding-top: 220px;
+    height: 600px;
+    width: 100%;
+    /* background-image: url('/public/img/sea.jpg'), url("../../public/img/sea.jpg"); */
+    /* background-color: gray; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    background: transparent;
+    position: absolute;
+}
+
+/* Customize the eductation section */
+.education-info {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: black;
+    color: rgb(202, 202, 202);
+    min-height: 530px;
+}
+
+.edu-button {
+    padding-top: 50px;
+}
+
+/* Customize the work experience section */
+.work-experience {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    min-height: 600px;
+}
+
+.work-button {
+    padding-top: 30px;
+}
+
+/* Customize the publications section */
+.publications {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    min-height: 400px;
+    background-color: gray;
+}
+
+#publication-info {
+    font-size: 18px;
+}
+
+#publication-link {
+    font-size: 16px;
+    color: white;
+}
+
+/* Customize the experiments section */
+.experiments {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    min-height: 400px;
+    background-color: white;
+}
+
+/* Customize the github section */
+.github {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    min-height: 680px;
+    background-color: black;
+    color: white;
+}
+
+/* Customize the interests section */
+.interests {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    min-height: 720px;
+    background-color: white;
+}
+
+.interest-card {
+    height: 200px;
+}
+
+/* Customize the tweets section */
+.tweets {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 200px;
+    background-color: gray;
+}
+
+/* Customize the contact information section */
+.contact-info {
+    padding-top: 40px;
+    padding-bottom: 2px;
+    min-height: 375px;
+    color: white;
+    background-color: black;
+}
+
+/* Customize Interests html pages */
+.interests-heading {
+    margin-top: 100px;
+}
+
+/* Customize responsive view, in order to fit in small devices */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    [class*="work-experience"] {
+        text-align: center;
+    }
+    [class*="github"] {
+        text-align: center;
+    }
+    [class*="interests"] {
+        text-align: center;
+    }
+    [class*="publication-cover"] {
+        width: 100%;
+        height: auto;
+    }
+}
