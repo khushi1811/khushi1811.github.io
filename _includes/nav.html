@@ -12,26 +12,11 @@
 
   <div class="collapse navbar-collapse" id="main-navbar">
     <ul class="navbar-nav ml-auto">
-      {%- for link in site.navbar-links -%}
-        {%- if link[1].first %}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resume</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {%- for childlink in link[1] -%}
-                {%- for linkparts in childlink %}
-                  <a class="dropdown-item" href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a>
-                {%- endfor -%}
-              {%- endfor %}
-            </div>
-          </li>
-        {% else %}
+     
           <li class="nav-item">
             <a class="nav-link" href="https://drive.google.com/file/d/1q0wNWjfEB80Ia1k1QqCXprlo85B0_2YC/view?usp=sharing">Resume</a>
           </li>
-        {%- endif -%}
-      {%- endfor -%}
-      {% if site.post_search %}
-      {%- endif -%}
+      
     </ul>
   </div>
 
